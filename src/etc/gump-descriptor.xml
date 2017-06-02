@@ -1,0 +1,44 @@
+<module name="ant-contrib">
+
+  <url  href="http://sourceforge.net/projects/ant-contrib/"/>
+  <description>
+    Useful little Ant tasks
+  </description>
+  <redistributable/>
+
+  <cvs repository="sourceforge" host-prefix="cvs.ant-contrib" 
+       dir="ant-contrib"/>
+  
+  <project name="ant-contrib">
+    <ant>
+      <property name="version"  value="@@DATE@@"/>
+    </ant>
+
+    <depend project="ant" inherit="runtime"/>
+    <depend project="xml-xerces"/>
+
+    <jar name="build/lib/ant-contrib-@@DATE@@.jar" />
+    <license name="manual/LICENSE.txt"/>
+    <javadoc nested="build/docs/api" project="ant-contrib"/>
+
+    <nag from="Stefan Bodewig &lt;bodewig@bost.de&gt;"
+         to="ant-contrib-developers@lists.sourceforge.net"/>
+  </project>
+
+  <project name="ant-contrib-test">
+    <mkdir dir="test/classes"/>
+    <ant target="test">
+      <property name="version"  value="@@DATE@@"/>
+    </ant>
+
+    <depend project="ant" inherit="runtime"/>
+    <depend project="xml-xerces"/>
+    <depend project="junit"/>
+    <depend project="ant-testutil"/>
+    <depend project="ant-contrib"/>
+    <work nested="test/classes"/>
+    <nag from="Stefan Bodewig &lt;bodewig@bost.de&gt;"
+         to="ant-contrib-developers@lists.sourceforge.net"/>
+  </project>
+
+</module>

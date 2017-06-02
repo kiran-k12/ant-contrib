@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="3" relativePaths="false">
+  <component name="ProjectRootManager" version="2">
+    <jdk name="java version &quot;1.3.1&quot;" />
+    <projectPath>
+      <root type="composite">
+        <root type="simple" url="file://$PROJECT_DIR$" />
+        <root type="simple" url="file://E:/SynDev/apache-ant-1.5.3-1/src/main" />
+        <root type="simple" url="file://E:/SynDev/apache-ant-1.5.3-1/src/testcases" />
+      </root>
+    </projectPath>
+    <sourcePath>
+      <root type="composite">
+        <root type="jdk" rootType="sourcePath" name="java version &quot;1.3.1&quot;" />
+        <root type="simple" url="file://$PROJECT_DIR$/src" />
+        <root type="simple" url="file://$PROJECT_DIR$/test/src" />
+        <root type="simple" url="file://E:/SynDev/apache-ant-1.5.2/src/testcases" />
+        <root type="simple" url="jar://C:/Documents and Settings/inger/Desktop/junit3.8.1/src.jar!/" />
+        <root type="simple" url="file://E:/SynDev/apache-ant-1.5.3-1/src/main" />
+        <root type="simple" url="file://E:/SynDev/apache-ant-1.5.3-1/src/testcases" />
+      </root>
+    </sourcePath>
+    <classPath>
+      <root type="composite">
+        <root type="jdk" rootType="classPath" name="java version &quot;1.3.1&quot;" />
+        <root type="output" />
+        <root type="simple" url="jar://E:/SynDev/ParaSoft/Jtest4.5/bin/junit.jar!/" />
+        <root type="simple" url="jar://E:/SynDev/apache-ant-1.5.3-1/lib/ant.jar!/" />
+        <root type="simple" url="jar://E:/SynDev/apache-ant-1.5.3-1/lib/optional.jar!/" />
+        <root type="simple" url="jar://E:/SynDev/apache-ant-1.5.3-1/lib/xml-apis.jar!/" />
+        <root type="simple" url="jar://E:/SynDev/apache-ant-1.5.3-1/lib/xercesImpl.jar!/" />
+        <root type="simple" url="jar://E:/SynDev/apache-ant-1.5.3-1/lib/jakarta-regexp-1.2.jar!/" />
+        <root type="simple" url="jar://E:/SynDev/lib/javamail-1.3/mail.jar!/" />
+        <root type="simple" url="jar://E:/SynDev/lib/javamail-1.3/lib/imap.jar!/" />
+        <root type="simple" url="jar://E:/SynDev/lib/javamail-1.3/lib/mailapi.jar!/" />
+        <root type="simple" url="jar://E:/SynDev/lib/javamail-1.3/lib/pop3.jar!/" />
+        <root type="simple" url="jar://E:/SynDev/lib/javamail-1.3/lib/smtp.jar!/" />
+        <root type="simple" url="jar://E:/SynDev/lib/activation.jar!/" />
+        <root type="simple" url="jar://$PROJECT_DIR$/build/lib/ant-contrib-0.5.jar!/" />
+      </root>
+    </classPath>
+    <excludePath>
+      <root type="composite">
+        <root type="excludedOutput" />
+        <root type="simple" url="file://$PROJECT_DIR$/build" />
+      </root>
+    </excludePath>
+    <javadocPath>
+      <root type="composite">
+        <root type="jdk" rootType="javadocPath" name="java version &quot;1.3.1&quot;" />
+      </root>
+    </javadocPath>
+    <assert_keyword enabled="no" />
+    <exclude_output enabled="yes" />
+  </component>
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <option name="SYNCHRONIZE_OUTPUT_DIRECTORY" value="false" />
+    <option name="DEFAULT_OUTPUT_PATH" value="$PROJECT_DIR$/build/classes" />
+    <option name="OUTPUT_MODE" value="single" />
+    <excludeFromCompile>
+      <directory url="file://E:/SynDev/apache-ant-1.5.3-1/src/testcases" includeSubdirectories="true" />
+      <directory url="file://E:/SynDev/apache-ant-1.5.3-1/src/main" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <resourceExtensions>
+      <entry name=".+\.(properties|xml|html)" />
+      <entry name=".+\.(gif|png|jpeg|jpg)" />
+    </resourceExtensions>
+  </component>
+  <component name="JavacSettings">
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="false" />
+    <option name="DEPRECATION" value="true" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+    <option name="MAXIMUM_HEAP_SIZE" value="128" />
+  </component>
+  <component name="JikesSettings">
+    <option name="JIKES_PATH" value="" />
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="DEPRECATION" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="false" />
+    <option name="GENERATE_MAKE_FILE_DEPENDENCIES" value="false" />
+    <option name="DO_FULL_DEPENDENCE_CHECK" value="false" />
+    <option name="IS_EMACS_ERRORS_MODE" value="true" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+  </component>
+  <component name="AntConfiguration">
+    <buildFile url="file://$PROJECT_DIR$/build.xml">
+      <runInBackground value="true" />
+      <useEmacsModeOutput value="true" />
+      <useCustomJdk value="false" />
+      <treeView value="true" />
+      <useJavaw value="false" />
+      <verbose value="true" />
+      <includeProjectClasspath value="false" />
+      <includeParser value="true" />
+      <maximumHeapSize value="128" />
+      <viewClosedWhenNoErrors value="false" />
+      <targetFilters>
+        <filter targetName="build_dirs" isVisible="false" />
+        <filter targetName="doc_dirs" isVisible="false" />
+        <filter targetName="dist_dirs" isVisible="false" />
+        <filter targetName="build_docs" isVisible="false" />
+        <filter targetName="build_contrib_jar" isVisible="false" />
+        <filter targetName="jar" isVisible="false" />
+        <filter targetName="docs" isVisible="false" />
+        <filter targetName="clean" isVisible="false" />
+        <filter targetName="all" isVisible="true" />
+        <filter targetName="src_dist" isVisible="false" />
+        <filter targetName="bin_dist" isVisible="false" />
+        <filter targetName="prepare_dist" isVisible="false" />
+        <filter targetName="dist-zip" isVisible="false" />
+        <filter targetName="dist-tar" isVisible="false" />
+        <filter targetName="dist" isVisible="false" />
+        <filter targetName="compile-tests" isVisible="false" />
+        <filter targetName="test" isVisible="false" />
+      </targetFilters>
+    </buildFile>
+    <buildFile url="file://$PROJECT_DIR$/test/resources/antserver/antservertest.xml">
+      <runInBackground value="true" />
+      <useEmacsModeOutput value="true" />
+      <useCustomJdk value="false" />
+      <treeView value="false" />
+      <useJavaw value="false" />
+      <verbose value="true" />
+      <includeProjectClasspath value="true" />
+      <includeParser value="true" />
+      <maximumHeapSize value="128" />
+      <viewClosedWhenNoErrors value="false" />
+      <targetFilters>
+        <filter targetName="default" isVisible="true" />
+        <filter targetName="test1_remote" isVisible="false" />
+        <filter targetName="dotest1" isVisible="false" />
+        <filter targetName="test1" isVisible="false" />
+        <filter targetName="test2_remote" isVisible="false" />
+        <filter targetName="dotest2" isVisible="false" />
+        <filter targetName="test2" isVisible="false" />
+        <filter targetName="test3_remote" isVisible="false" />
+        <filter targetName="dotest3" isVisible="false" />
+        <filter targetName="test3" isVisible="false" />
+        <filter targetName="test4_remote" isVisible="false" />
+        <filter targetName="dotest4" isVisible="false" />
+        <filter targetName="test4" isVisible="false" />
+        <filter targetName="dotest5" isVisible="false" />
+        <filter targetName="cleanup" isVisible="false" />
+        <filter targetName="test5" isVisible="false" />
+        <filter targetName="run.test.with.server" isVisible="false" />
+        <filter targetName="test" isVisible="false" />
+      </targetFilters>
+    </buildFile>
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" />
+    <option name="OPTION_SCOPE" value="protected" />
+    <option name="OPTION_HIERARCHY" value="true" />
+    <option name="OPTION_NAVIGATOR" value="true" />
+    <option name="OPTION_INDEX" value="true" />
+    <option name="OPTION_SEPARATE_INDEX" value="true" />
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
+    <option name="OPTION_DEPRECATED_LIST" value="true" />
+    <option name="OTHER_OPTIONS" value="" />
+    <option name="HEAP_SIZE" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+  </component>
+  <component name="WebManager">
+    <option enabled="false" />
+  </component>
+  <component name="WebRootContainer" />
+  <component name="EjbManager" enabled="false" />
+  <component name="JUnitProjectSettings">
+    <option name="TEST_RUNNER" value="Text" />
+  </component>
+  <component name="EntryPointsManager">
+    <entry_points />
+  </component>
+  <component name="EjbActionsConfiguration">
+    <option name="NEW_MESSAGE_BEAN_LAST_PACKAGE" value="" />
+    <option name="NEW_ENTITY_BEAN_LAST_PACKAGE" value="" />
+    <option name="NEW_SESSION_BEAN_LAST_PACKAGE" value="" />
+  </component>
+  <component name="CodeStyleManager">
+    <option name="USE_DEFAULT_CODE_STYLE_SCHEME" value="true" />
+    <option name="CODE_STYLE_SCHEME" value="" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="PRINT_LINE_NUMBERS" value="false" />
+    <option name="OPEN_IN_BROWSER" value="false" />
+    <option name="OUTPUT_DIRECTORY" />
+  </component>
+  <component name="DevPartner.ProjectProperties">
+    <option name="dpjConfigurationName" value="ant-contrib" />
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="defaultFileLocation" value="file://$APPLICATION_HOME_DIR$/bin" />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-986896" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+  </component>
+</project>
+

@@ -1,0 +1,25 @@
+You need two things in addition to vanilla Ant to run the testcases:
+JUnit and ant-testutil.jar.
+
+ant-testutil.jar
+----------------
+This is included in the source distribution for ant-contrib in the
+directory "test/lib".
+
+junit-3.8.1.jar
+----------------
+This file will be automatically downloaded from http://www.ibiblio.org
+and placed in the directory "test/lib".  If it is already present on
+your computer, then you may copy it to this directory to avoid having
+it downloaded.
+
+
+JUnit can be found at http://www.junit.org and should be on any
+developer's disk anyway.
+
+
+Finally, all you have to do, is to run the "test" target.
+
+Footnotes: 
+[1]  http://ant.apache.org/faq.html#delegating-classloader
+

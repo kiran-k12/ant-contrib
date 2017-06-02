@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+ * The Apache Software License, Version 1.1
+ *
+ * Copyright (c) 2001-2003 Ant-Contrib project.  All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ *
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in
+ *    the documentation and/or other materials provided with the
+ *    distribution.
+ *
+ * 3. The end-user documentation included with the redistribution, if
+ *    any, must include the following acknowlegement:
+ *       "This product includes software developed by the
+ *        Ant-Contrib project (http://sourceforge.net/projects/ant-contrib)."
+ *    Alternately, this acknowlegement may appear in the software itself,
+ *    if and wherever such third-party acknowlegements normally appear.
+ *
+ * 4. The name Ant-Contrib must not be used to endorse or promote products
+ *    derived from this software without prior written permission. For
+ *    written permission, please contact
+ *    ant-contrib-developers@lists.sourceforge.net.
+ *
+ * 5. Products derived from this software may not be called "Ant-Contrib"
+ *    nor may "Ant-Contrib" appear in their names without prior written
+ *    permission of the Ant-Contrib project.
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED.  IN NO EVENT SHALL THE ANT-CONTRIB PROJECT OR ITS
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+ * USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ * ====================================================================
+-->
+
+<project name="AntContrib" default="all" basedir=".">
+
+  <!-- hook for use overrides -->
+  <property file="build.properties"/>
+
+  <property name="build"   location="build" />
+  <property name="src"     location="src" />
+  <property name="manual"  location="manual" />
+  <property name="test"    location="test" />
+
+  <property name="dist"     location="${build}/dist" />
+  <property name="dist.src" location="${build}/dist/src" />
+  <property name="dist.bin" location="${build}/dist/bin" />
+  <property name="lib"      location="${build}/lib" />
+  <property name="docs"     location="${build}/docs" />
+  <property name="api"      location="${build}/docs/api" />
+  <property name="classes"  location="${build}/classes" />
+
+  <property name="javac.debug" value="false"/>
+  <property name="javac.target" value="1.1"/>
+
+  <property name="testsrc" location="${test}/src"/>
+  <property name="testlib" location="${test}/lib"/>
+  <property name="testres" location="${test}/resources"/>
+  <property name="testclasses" location="${test}/classes"/>
+
+  <property name="runlib" location="lib"/>
+
+  <property name="dist.base" value="ant-contrib-${version}" />
+  <property name="contrib.jar" location="${lib}/${dist.base}.jar" />
+
+  <!--
+  ######################################################
+  ### Build the class and jar file target directories
+  ######################################################
+  -->
+  <target name="build_dirs">
+    <mkdir dir="${classes}" />
+    <mkdir dir="${lib}" />
+  </target>
+
+  <!--
+  ######################################################
+  ### Build the documentation directories
+  ######################################################
+  -->
+  <target name="doc_dirs">
+    <mkdir dir="${docs}" />
+    <mkdir dir="${api}" />
+  </target>
+
+  <!--
+  ######################################################
+  ### Build the documentation directories
+  ######################################################
+  -->
+  <target name="dist_dirs">
+    <mkdir dir="${dist}" />
+  </target>
+
+  <!--
+  ######################################################
+  ### Build the javadoc documentation
+  ######################################################
+  -->
+  <target name="build_docs" depends="doc_dirs">
+    <javadoc sourcepath="${src}"
+             destdir="${api}"
+             packagenames="net.sf.antcontrib.*"
+             author="true"
+             version="true"
+             windowtitle="Ant Contrib">
+      <tag name="ant.task" enabled="false" description="Task:" scope="types"/>
+      <tag name="ant.datatype" enabled="false"
+           description="Data type:" scope="types"/>
+      <tag name="ant.attribute" enabled="false"
+           description="Attribute:" scope="types"/>
+      <tag name="ant.attribute.group" enabled="false"
+           description="Attribute group:" scope="types"/>
+      <tag name="ant.element" enabled="false"
+           description="Nested element:" scope="types"/>
+    </javadoc>
+    <copy todir="${docs}">
+      <fileset dir="${manual}"/>
+    </copy>
+  </target>
+
+  <target name="check-version">
+    <available property="jdk1.4+" classname="java.lang.CharSequence"/>
+  </target>
+
+  <!--
+  ######################################################
+  ### Build the ant-contrib jar file
+  ######################################################
+  -->
+  <target name="build_contrib_jar" depends="build_dirs,check-version,get-jar-deps">
+    <javac srcdir="${src}"
+           debug="${javac.debug}"
+           target="${javac.target}"
+           destdir="${classes}">
+        <classpath>
+            <fileset refid="run.libs" />
+        </classpath>
+    </javac>
+
+    <copy todir="${classes}">
+      <fileset dir="${src}">
+        <include name="**/*.properties" />
+        <include name="**/*.xml" />
+      </fileset>
+    </copy>
+
+    <jar jarfile="${contrib.jar}">
+      <fileset dir="${classes}">
+        <include name="**/*.class" />
+        <include name="**/*.properties" />
+        <include name="**/*.xml" />
+      </fileset>
+    </jar>
+  </target>
+
+  <!--
+  ######################################################
+  ### Build the library
+  ######################################################
+  -->
+  <target name="jar" depends="build_contrib_jar" />
+
+  <!--
+  ######################################################
+  ### Build the documentation
+  ######################################################
+  -->
+  <target name="docs" depends="build_docs"/>
+
+  <!--
+  ######################################################
+  ### Clean all derived files
+  ######################################################
+  -->
+  <target name="clean">
+    <delete dir="${classes}"/>
+    <delete dir="${lib}"/>
+    <delete dir="${dist}"/>
+    <delete dir="${docs}"/>
+    <delete dir="${testclasses}"/>
+  </target>
+
+  <!--
+  ######################################################
+  ### Build All Targets
+  ######################################################
+  -->
+  <target name="all" depends="jar,docs"/>
+
+  <!--
+  ######################################################
+  ### Prepares source distribution
+  ######################################################
+  -->
+  <target name="src_dist" depends="dist_dirs">
+    <mkdir dir="${dist.src}"/>
+    <copy todir="${dist.src}">
+      <fileset dir=".">
+        <exclude name="build.properties"/>
+        <exclude name="build/**" />
+      </fileset>
+    </copy>
+  </target>
+
+  <!--
+  ######################################################
+  ### Prepares binary distribution
+  ######################################################
+  -->
+  <target name="bin_dist" depends="dist_dirs,all">
+    <mkdir dir="${dist.bin}"/>
+    <mkdir dir="${dist.bin}/lib"/>
+    <mkdir dir="${dist.bin}/docs"/>
+    <copy todir="${dist.bin}/lib" file="${contrib.jar}"/>
+    <copy todir="${dist.bin}/docs">
+      <fileset dir="${docs}"/>
+    </copy>
+    <copy todir="${dist.bin}">
+      <fileset dir=".">
+        <include name="README.txt"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <!--
+  ######################################################
+  ### Prepares binary distribution
+  ######################################################
+  -->
+  <target name="prepare_dist" depends="src_dist,bin_dist"/>
+
+  <!--
+  ######################################################
+  ### Build the src and bin distribution in ZIP archive
+  ######################################################
+  -->
+  <target name="dist-zip" depends="prepare_dist">
+    <!-- Binary distribution -->
+    <zip zipfile="${dist}/${dist.base}-bin.zip">
+      <fileset dir="${dist.bin}" />
+    </zip>
+
+    <!-- Source distribution -->
+    <zip zipfile="${dist}/${dist.base}-src.zip">
+      <fileset dir="${dist.src}" />
+    </zip>
+  </target>
+
+  <!--
+  ######################################################
+  ### Build the src and bin distributions in TAR.GZ archive
+  ######################################################
+  -->
+  <target name="dist-tar" depends="prepare_dist">
+    <!-- Binary distribution -->
+    <tar tarfile="${dist}/${dist.base}-bin.tar" basedir="${dist.bin}"/>
+    <gzip zipfile="${dist}/${dist.base}-bin.tar.gz"
+          src="${dist}/${dist.base}-bin.tar" />
+    <bzip2 zipfile="${dist}/${dist.base}-bin.tar.bz2"
+           src="${dist}/${dist.base}-bin.tar" />
+    <delete>
+      <fileset dir="${dist}"
+               includes="${dist.base}-bin.tar" />
+    </delete>
+
+    <!-- Source distribution -->
+    <tar tarfile="${dist}/${dist.base}-src.tar" basedir="${dist.src}"/>
+    <gzip zipfile="${dist}/${dist.base}-src.tar.gz"
+          src="${dist}/${dist.base}-src.tar" />
+    <bzip2 zipfile="${dist}/${dist.base}-src.tar.bz2"
+           src="${dist}/${dist.base}-src.tar" />
+    <delete>
+      <fileset dir="${dist}"
+               includes="${dist.base}-src.tar" />
+    </delete>
+
+  </target>
+
+  <!--
+  ######################################################
+  ### Complete dist with checksums
+  ######################################################
+  -->
+  <target name="dist" depends="dist-zip,dist-tar">
+    <checksum fileext=".md5">
+      <fileset dir="${dist}">
+        <include name="*.zip"/>
+        <include name="*.tar.*"/>
+      </fileset>
+    </checksum>
+  </target>
+
+  <!--
+  ######################################################
+  ### Compile the tests
+  ######################################################
+  -->
+  <target name="compile-tests" depends="build_contrib_jar,get-test-deps">
+    <mkdir dir="${testclasses}"/>
+    <javac srcdir="${testsrc}" destdir="${testclasses}"
+           debug="${javac.debug}" target="${javac.target}">
+      <classpath>
+        <pathelement location="${contrib.jar}"/>
+        <fileset refid="test.libs" />
+        <fileset refid="run.libs" />
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="test" depends="compile-tests">
+    <junit haltonfailure="true">
+      <formatter type="brief" usefile="false"/>
+      <batchtest>
+        <fileset dir="${testclasses}">
+          <exclude name="**/BuildFileTestBase.class"/>
+        </fileset>
+      </batchtest>
+      <sysproperty key="antcontrib.jar" file="${contrib.jar}"/>
+      <classpath>
+        <pathelement location="${contrib.jar}"/>
+        <pathelement location="${testclasses}"/>
+        <fileset refid="test.libs" />
+        <fileset refid="run.libs" />
+      </classpath>
+    </junit>
+  </target>
+
+
+  <target name="get-jar-deps">
+      <fileset id="run.libs" dir="${runlib}">
+          <include name="*.jar" />
+          <include name="*.zip" />
+      </fileset>
+  </target>
+
+  <target name="build-ant-testutil" unless="ant.build.testutil.available">
+      <unzip src="${build.ant.dir}/${ant.src.file}"
+             dest="${build.ant.dir}" />
+
+      <ant antfile="build.xml"
+           dir="${build.ant.dir}/${ant.unzip.dir}"
+           target="test-jar" />
+  </target>
+
+  <target name="get-ant-testutil" unless="ant.testutil.available">
+      <property name="build.ant.dir"
+                value="build/ant" />
+      <property name="ant.download.version"
+                value="1.5.4" />
+      <property name="ant.src.file"
+                value="apache-ant-${ant.download.version}-src.zip" />
+      <property name="ant.unzip.dir"
+                value="apache-ant-${ant.download.version}" />
+
+      <mkdir dir="${build.ant.dir}" />
+
+      <get dest="${build.ant.dir}/${ant.src.file}"
+           usetimestamp="true"
+           src="http://www.apache.org/dist/ant/source/${ant.src.file}">
+      </get>
+
+      <available property="ant.build.testutil.available"
+                 file="${build.ant.dir}/${ant.unzip.dir}/build/lib/ant-testutil.jar" />
+
+      <antcall target="build-ant-testutil"
+               inheritall="true" />
+
+      <copy todir="${testlib}">
+          <fileset dir="${build.ant.dir}/${ant.unzip.dir}/build/lib">
+              <include name="ant-testutil.jar" />
+          </fileset>
+      </copy>
+  </target>
+
+  <target name="get-dep" unless="dep.available">
+      <get dest="${dep.dest}"
+           usetimestamp="true"
+           src="${dep.src}">
+      </get>
+  </target>
+
+  <target name="get-dep-maybe">
+      <available file="${dep.dest}" property="dep.available" />
+      <antcall target="get-dep" inheritall="true" />
+  </target>
+
+  <target name="get-test-deps" depends="get-jar-deps">
+
+      <available property="ant.testutil.available"
+                 file="${testlib}/ant-testutil.jar" />
+      <antcall target="get-ant-testutil" />
+
+      <antcall target="get-dep-maybe">
+          <param name="dep.src" value="http://www.ibiblio.org/maven/junit/jars/junit-3.8.1.jar" />
+          <param name="dep.dest" value="${testlib}/junit-3.8.1.jar" />
+      </antcall>
+
+      <fileset id="test.libs" dir="${testlib}">
+          <include name="*.jar" />
+          <include name="*.zip" />
+      </fileset>
+  </target>
+
+</project>
+

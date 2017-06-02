@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="3" relativePaths="false">
+  <component name="FileEditorManager">
+    <history>
+      <source-position-entry url="file://E:/SynDev/apache-ant-1.5.3-1/src/main/org/apache/tools/ant/taskdefs/Parallel.java" line="124" column="43" vertical-scroll-proportion="1.9578059" horizontal-scroll-proportion="0.7323601" />
+      <source-position-entry url="file://$PROJECT_DIR$/manual/tasks/foreach.html" line="75" column="54" vertical-scroll-proportion="3.700422" horizontal-scroll-proportion="0.919708" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antcontrib.properties" line="29" column="19" vertical-scroll-proportion="2.0801687" horizontal-scroll-proportion="0.3181818" />
+      <source-position-entry url="file://E:/SynDev/apache-ant-1.5.3-1/src/main/org/apache/tools/ant/taskdefs/CallTarget.java" line="152" column="27" vertical-scroll-proportion="1.2320675" horizontal-scroll-proportion="0.459854" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/logic/IfTask.java" line="183" column="23" vertical-scroll-proportion="0.33223686" horizontal-scroll-proportion="0.3432836" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/logic/ForEach.java" line="239" column="9" vertical-scroll-proportion="3.9957807" horizontal-scroll-proportion="0.15328467" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/etc/gump-descriptor.xml" line="19" column="25" vertical-scroll-proportion="0.6320939" horizontal-scroll-proportion="0.3668763" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antserver/server/ServerTask.java" line="84" column="17" vertical-scroll-proportion="0.8312236" horizontal-scroll-proportion="0.2895377" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antserver/server/Server.java" line="91" column="16" vertical-scroll-proportion="0.33197555" horizontal-scroll-proportion="0.2725061" />
+      <source-position-entry url="file://$PROJECT_DIR$/build.properties" line="0" column="11" vertical-scroll-proportion="0.0" horizontal-scroll-proportion="0.18117647" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antserver/Command.java" line="80" column="53" vertical-scroll-proportion="0.5485232" horizontal-scroll-proportion="0.88755983" />
+      <source-position-entry url="file://$PROJECT_DIR$/build.xml" line="216" column="0" vertical-scroll-proportion="0.4978903" horizontal-scroll-proportion="0.0" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antserver/commands/DisconnectCommand.java" line="85" column="19" vertical-scroll-proportion="0.6919831" horizontal-scroll-proportion="0.3181818" />
+      <source-position-entry url="file://$PROJECT_DIR$/test/resources/antserver/antservertest.xml" line="127" column="0" vertical-scroll-proportion="1.1940929" horizontal-scroll-proportion="0.0" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antserver/server/ConnectionHandler.java" line="150" column="48" vertical-scroll-proportion="0.5527426" horizontal-scroll-proportion="0.81751823" />
+    </history>
+    <open-files>
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/logic/ForEach.java" line="239" column="9" vertical-scroll-proportion="3.9957807" horizontal-scroll-proportion="0.15328467" />
+      <source-position-entry url="file://$PROJECT_DIR$/build.properties" line="0" column="11" vertical-scroll-proportion="0.0" horizontal-scroll-proportion="0.18117647" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antserver/server/ConnectionHandler.java" line="150" column="48" vertical-scroll-proportion="0.5527426" horizontal-scroll-proportion="0.81751823" selected="true" />
+      <source-position-entry url="file://$PROJECT_DIR$/build.xml" line="216" column="0" vertical-scroll-proportion="0.4978903" horizontal-scroll-proportion="0.0" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antserver/Command.java" line="80" column="53" vertical-scroll-proportion="0.5485232" horizontal-scroll-proportion="0.88755983" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antserver/commands/DisconnectCommand.java" line="85" column="19" vertical-scroll-proportion="0.6919831" horizontal-scroll-proportion="0.3181818" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antserver/server/ServerTask.java" line="84" column="17" vertical-scroll-proportion="0.8312236" horizontal-scroll-proportion="0.2895377" />
+      <source-position-entry url="file://E:/SynDev/apache-ant-1.5.3-1/src/main/org/apache/tools/ant/taskdefs/CallTarget.java" line="152" column="27" vertical-scroll-proportion="1.2320675" horizontal-scroll-proportion="0.459854" />
+      <source-position-entry url="file://$PROJECT_DIR$/test/resources/antserver/antservertest.xml" line="127" column="0" vertical-scroll-proportion="1.1940929" horizontal-scroll-proportion="0.0" />
+      <source-position-entry url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antcontrib.properties" line="29" column="19" vertical-scroll-proportion="2.0801687" horizontal-scroll-proportion="0.3181818" />
+    </open-files>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="-2" width="1032" height="723" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.1663286" order="1" />
+      <window_info id="XSL Transform" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.3305785" order="8" />
+      <window_info id="PsiViewer" active="false" anchor="right" auto_hide="true" internal_type="sliding" type="sliding" visible="false" weight="0.33" order="3" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.35206613" order="4" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="2" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="8" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="sliding" type="sliding" visible="false" weight="0.39958376" order="0" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.31135902" order="0" />
+      <window_info id="simpleUML" active="false" anchor="left" auto_hide="true" internal_type="sliding" type="sliding" visible="false" weight="0.33" order="3" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.40032154" order="3" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.24869928" order="1" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.3338843" order="1" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.41157025" order="0" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.4" order="5" />
+      <window_info id="ContextViewer" active="false" anchor="bottom" auto_hide="true" internal_type="sliding" type="sliding" visible="false" weight="0.33" order="8" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="2" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="2" />
+      <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="6" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="7" />
+      <window_info id="MattProject" active="false" anchor="right" auto_hide="true" internal_type="sliding" type="sliding" visible="false" weight="0.33" order="3" />
+      <window_info id="Starteam" active="false" anchor="left" auto_hide="true" internal_type="sliding" type="sliding" visible="false" weight="0.33" order="3" />
+    </layout>
+  </component>
+  <component name="Debugger">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antserver/commands/DisconnectCommand.java" line="81">
+        <option name="ENABLED" value="true" />
+        <option name="SUSPEND_VM" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CONDITION" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="LOG_MESSAGE" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INVERSE_CLASS_FILLTERS" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+      </breakpoint>
+    </line_breakpoints>
+    <exception_breakpoints>
+      <breakpoint_any>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="SUSPEND_VM" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CONDITION" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="LOG_MESSAGE" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INVERSE_CLASS_FILLTERS" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+      </breakpoint_any>
+    </exception_breakpoints>
+    <field_breakpoints />
+    <method_breakpoints />
+  </component>
+  <component name="DebuggerManager" />
+  <component name="DebuggerSettings">
+    <option name="TRACING_FILTERS_ENABLED" value="true" />
+    <option name="TOSTRING_CLASSES_ENABLED" value="false" />
+    <option name="VALUE_LOOKUP_DELAY" value="700" />
+    <option name="DEBUGGER_TRANSPORT" value="0" />
+    <option name="FORCE_CLASSIC_VM" value="true" />
+    <option name="HIDE_DEBUGGER_ON_PROCESS_TERMINATION" value="false" />
+    <option name="SKIP_SYNTHETIC_METHODS" value="true" />
+    <option name="SKIP_CONSTRUCTORS" value="false" />
+    <option name="STEP_THREAD_SUSPEND_POLICY" value="SuspendThread" />
+    <option name="EVALUATION_TIMEOUT" value="1000" />
+    <default_breakpoint_settings>
+      <option name="NOTIFY_CAUGHT" value="true" />
+      <option name="NOTIFY_UNCAUGHT" value="true" />
+      <option name="WATCH_MODIFICATION" value="true" />
+      <option name="WATCH_ACCESS" value="true" />
+      <option name="WATCH_ENTRY" value="true" />
+      <option name="WATCH_EXIT" value="true" />
+      <option name="ENABLED" value="true" />
+      <option name="SUSPEND_VM" value="true" />
+      <option name="COUNT_FILTER_ENABLED" value="false" />
+      <option name="COUNT_FILTER" value="0" />
+      <option name="CONDITION_ENABLED" value="false" />
+      <option name="CONDITION" />
+      <option name="LOG_ENABLED" value="false" />
+      <option name="LOG_EXPRESSION_ENABLED" value="false" />
+      <option name="LOG_MESSAGE" />
+      <option name="CLASS_FILTERS_ENABLED" value="false" />
+      <option name="INVERSE_CLASS_FILLTERS" value="false" />
+      <option name="SUSPEND_POLICY" value="SuspendAll" />
+    </default_breakpoint_settings>
+    <filter>
+      <option name="PATTERN" value="com.sun.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="java.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="javax.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="org.omg.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="sun.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="junit.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="COMPILE_IN_BACKGROUND" value="false" />
+    <option name="AUTO_SHOW_ERRORS_IN_EDITOR" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="HIDE_WARNINGS" value="false" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="SORT_MODE" value="0" />
+    <option name="GROUP_OVERRIDINGS" value="true" />
+    <option name="GROUP_IMPLEMENTINGS" value="true" />
+    <option name="AUTOSCROLL_MODE" value="true" />
+    <option name="SHOW_METHODS" value="true" />
+    <option name="SHOW_FIELDS" value="true" />
+    <option name="AUTOSCROLL_FROM_SOURCE" value="false" />
+    <option name="GROUP_GETTERS_AND_SETTERS" value="true" />
+  </component>
+  <component name="CvsConfiguration">
+    <Checkout>
+      <option name="DATE_TAG" value="" />
+      <option name="REVISION_TAG" value="" />
+      <option name="PRUNE_EMPTY_DIRS" value="true" />
+      <option name="RESET_STICKY_TAGS" value="false" />
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="CREATE_WORKING_DIR" value="" />
+      <option name="ADDITIONAL_OPTIONS" value="" />
+    </Checkout>
+    <Update>
+      <option name="DATE_TAG" value="" />
+      <option name="REVISION_TAG" value="" />
+      <option name="PRUNE_EMPTY_DIRS" value="true" />
+      <option name="RESET_STICKY_TAGS" value="false" />
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="CREATE_MISSING_DIRECTORIES" value="true" />
+      <option name="DONT_CHANGE_FILES" value="false" />
+      <option name="QUIET_MODE" value="false" />
+      <option name="ADDITIONAL_OPTIONS" value="" />
+    </Update>
+    <Commit>
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="REVISION_TAG" value="" />
+      <option name="LOG_MESSAGE" value="" />
+      <option name="ADDITIONAL_OPTIONS" value="" />
+    </Commit>
+    <Diff>
+      <option name="REVISION_TAG" value="HEAD" />
+      <option name="DATE_TAG" value="" />
+      <option name="IGNORE_WHITESPACE" value="false" />
+    </Diff>
+    <Add>
+      <option name="ADD_AS_BINARY" value="false" />
+      <option name="LOG_MESSAGE" value="" />
+    </Add>
+    <Status>
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="INCLUDE_TAGS" value="false" />
+    </Status>
+    <Edit>
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="FORCE_RECURSIVE" value="false" />
+      <option name="EDIT" value="false" />
+      <option name="UNEDIT" value="false" />
+      <option name="COMMIT" value="false" />
+      <option name="ALL" value="true" />
+      <option name="NONE" value="false" />
+    </Edit>
+    <Remove>
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="FORCE_RECURSIVE" value="false" />
+      <option name="DELETE_FILE" value="false" />
+    </Remove>
+    <Log>
+      <option name="DEFAULT_BRANCH" value="false" />
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="QUIET_MODE" value="true" />
+      <option name="ADDITIONAL_OPTIONS" value="" />
+    </Log>
+    <Editors>
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="FORCE_RECURSIVE" value="false" />
+    </Editors>
+    <option name="CLIENT_PATH" value="" />
+    <option name="EXTERNAL_DIFF_PATH" />
+    <option name="USE_EXTERNAL_DIFF" value="false" />
+    <option name="WORKING_FILES_READONLY" value="false" />
+    <option name="COMPRESSION_LEVEL" value="0" />
+    <option name="ADDITIONAL_OPTIONS" value="" />
+    <option name="BINARY_FILES_EXTENSIONS" />
+    <option name="REUSE_LAST_LOG_MESSAGE" value="false" />
+    <option name="PUT_FOCUS_INTO_LOG_MESSAGE" value="false" />
+    <option name="SHOW_UPDATE_OPTIONS" value="true" />
+    <option name="SHOW_COMMIT_OPTIONS" value="true" />
+    <option name="SHOW_DIFF_OPTIONS" value="true" />
+    <option name="SHOW_ADD_OPTIONS" value="true" />
+    <option name="SHOW_STATUS_OPTIONS" value="true" />
+    <option name="SHOW_EDIT_OPTIONS" value="true" />
+    <option name="SHOW_UNEDIT_OPTIONS" value="true" />
+    <option name="SHOW_REMOVE_OPTIONS" value="true" />
+    <option name="SHOW_LOG_OPTIONS" value="true" />
+    <option name="SHOW_EDITORS_OPTIONS" value="true" />
+    <option name="HIDE_UNKNOWN_FILES" value="false" />
+    <option name="HIDE_MISSING_FILES" value="false" />
+    <option name="HIDE_UP_TO_DATE_FILES" value="false" />
+  </component>
+  <component name="CvsVcs">
+    <expanded_paths />
+  </component>
+  <component name="ProjectViewSettings">
+    <navigator currentView="ProjectPane" flattenPackages="true" showMembers="false" showStructure="true" autoscrollToSource="false" splitterProportion="0.5042493" />
+    <view id="ProjectPane">
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/etc" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/net/sf/antcontrib/antserver/server" />
+    </view>
+    <view id="SourcepathPane" />
+    <view id="ClasspathPane" />
+  </component>
+  <component name="RunManager">
+    <option name="SHOW_SETTINGS_BEFORE_RUNNING" value="true" />
+    <option name="COMPILE_BEFORE_RUNNING" value="false" />
+    <activeType name="JUnit" />
+    <configuration name="&lt;template&gt;" type="Application" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="Remote" default="true" selected="false">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <WebServerIntegration name="" />
+      <Host>localhost</Host>
+      <Port>5050</Port>
+      <LaunchServer>false</LaunchServer>
+    </configuration>
+    <configuration name="test" type="Application" default="false" selected="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="CompileWithWallsTest" type="JUnit" default="false" selected="false">
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="net.sf.antcontrib.walls.CompileWithWallsTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Djava.home=E:/SynDev/jdk1.3.1" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ExtensionSetBuilderTest" type="JUnit" default="false" selected="false">
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="net.sf.antcontrib.project.extension.ExtensionSetBuilderTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="IniTest.testIni" type="JUnit" default="false" selected="false">
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="net.sf.antcontrib.inifile.IniTest" />
+      <option name="METHOD_NAME" value="testIni" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="AntServerTest" type="JUnit" default="false" selected="true">
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="net.sf.antcontrib.antserver.AntServerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="AntServerTest.test3" type="JUnit" default="false" selected="false">
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="net.sf.antcontrib.antserver.AntServerTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="AntServerTest.test5" type="JUnit" default="false" selected="false">
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="net.sf.antcontrib.antserver.AntServerTest" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+  </component>
+  <component name="BookmarkManager" />
+  <component name="Commander">
+    <leftPanel view="Project" />
+    <rightPanel view="Project" />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+  </component>
+  <component name="SelectInManager" />
+  <component name="VssConfiguration">
+    <CheckoutOptions>
+      <option name="COMMENT" value="" />
+      <option name="DO_NOT_GET_LATEST_VERSION" value="false" />
+      <option name="REPLACE_WRITABLE" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckoutOptions>
+    <CheckinOptions>
+      <option name="COMMENT" value="" />
+      <option name="KEEP_CHECKED_OUT" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckinOptions>
+    <AddOptions>
+      <option name="COMMENT" value="" />
+      <option name="STORE_ONLY_LATEST_VERSION" value="false" />
+      <option name="CHECK_OUT_IMMEDIATELY" value="false" />
+      <option name="FILE_TYPE" value="0" />
+    </AddOptions>
+    <UndocheckoutOptions>
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="REPLACE_LOCAL_COPY" value="0" />
+      <option name="RECURSIVE" value="false" />
+    </UndocheckoutOptions>
+    <DiffOptions>
+      <option name="IGNORE_WHITE_SPACE" value="false" />
+      <option name="IGNORE_CASE" value="false" />
+    </DiffOptions>
+    <GetOptions>
+      <option name="REPLACE_WRITABLE" value="0" />
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </GetOptions>
+    <option name="CLIENT_PATH" value="" />
+    <option name="SRCSAFEINI_PATH" value="" />
+    <option name="USER_NAME" value="" />
+    <option name="PWD" value="" />
+    <option name="SHOW_CHECKOUT_OPTIONS" value="true" />
+    <option name="SHOW_CHECKIN_OPTIONS" value="true" />
+    <option name="SHOW_ADD_OPTIONS" value="true" />
+    <option name="SHOW_UNDOCHECKOUT_OPTIONS" value="true" />
+    <option name="SHOW_DIFF_OPTIONS" value="true" />
+    <option name="SHOW_GET_OPTIONS" value="true" />
+    <option name="USE_EXTERNAL_DIFF" value="false" />
+    <option name="EXTERNAL_DIFF_PATH" value="" />
+    <option name="REUSE_LAST_COMMENT" value="false" />
+    <option name="PUT_FOCUS_INTO_COMMENT" value="false" />
+  </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SHOW_PACKAGES" value="false" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="SORT_ALPHABETICALLY" value="false" />
+  </component>
+  <component name="WebViewSettings">
+    <webview flattenPackages="false" showMembers="false" autoscrollToSource="false" />
+  </component>
+  <component name="EjbViewSettings">
+    <EjbView showMembers="false" autoscrollToSource="false" />
+  </component>
+  <component name="LvcsConfiguration">
+    <option name="LOCAL_VCS_ENABLED" value="false" />
+    <option name="LOCAL_VCS_PURGING_PERIOD" value="259200000" />
+    <option name="ADD_LABEL_ON_PROJECT_OPEN" value="true" />
+    <option name="ADD_LABEL_ON_PROJECT_COMPILATION" value="true" />
+    <option name="ADD_LABEL_ON_FILE_PACKAGE_COMPILATION" value="true" />
+    <option name="ADD_LABEL_ON_PROJECT_MAKE" value="true" />
+    <option name="ADD_LABEL_ON_RUNNING" value="true" />
+    <option name="ADD_LABEL_ON_DEBUGGING" value="true" />
+    <option name="ADD_LABEL_ON_UNIT_TEST" value="true" />
+    <option name="MARK_EXTERNAL_CHANGES_AS_UP_TO_DATE" value="true" />
+  </component>
+  <component name="InspectionManager">
+    <option name="AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="SPLITTER_PROPORTION" value="0.5" />
+    <inspection_tool class="Unused declaration" enabled="false">
+      <option name="ADD_MAINS_TO_ENTRIES" value="true" />
+      <option name="ADD_JUNIT_TO_ENTRIES" value="true" />
+      <option name="ADD_EJB_TO_ENTRIES" value="true" />
+      <option name="ADD_APPLET_TO_ENTRIES" value="true" />
+      <option name="ADD_SERVLET_TO_ENTRIES" value="true" />
+      <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
+    </inspection_tool>
+    <inspection_tool class="Declaration access can be weaker" enabled="false">
+      <option name="SUGGEST_PACKAGE_LOCAL_FOR_MEMBERS" value="true" />
+      <option name="SUGGEST_PACKAGE_LOCAL_FOR_TOP_CLASSES" value="true" />
+      <option name="SUGGEST_PRIVATE_FOR_INNERS" value="false" />
+    </inspection_tool>
+    <inspection_tool class="Declaration can have static modifier" enabled="false" />
+    <inspection_tool class="Declaration can have final modifier" enabled="false">
+      <option name="REPORT_CLASSES" value="true" />
+      <option name="REPORT_METHODS" value="true" />
+      <option name="REPORT_FIELDS" value="true" />
+    </inspection_tool>
+    <inspection_tool class="Unused method parameters" enabled="false" />
+    <inspection_tool class="Actual method parameter is the same constant" enabled="false" />
+    <inspection_tool class="Unused method return value" enabled="false" />
+    <inspection_tool class="Method returns the same value" enabled="false" />
+    <inspection_tool class="Empty method" enabled="false" />
+    <inspection_tool class="Redundant throws clause" enabled="false" />
+    <inspection_tool class="Constant conditions &amp; exceptions" enabled="false" />
+    <inspection_tool class="Unused assignment" enabled="false" />
+    <inspection_tool class="Redundant type cast" enabled="false" />
+    <inspection_tool class="Local variable or parameter can be final" enabled="false">
+      <option name="REPORT_VARIABLES" value="true" />
+      <option name="REPORT_PARAMETERS" value="true" />
+    </inspection_tool>
+    <inspection_tool class="Declaration has javadoc problems" enabled="false">
+      <option name="TOP_LEVEL_CLASS_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="public" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="INNER_CLASS_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="protected" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="METHOD_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="protected" />
+          <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
+        </value>
+      </option>
+      <option name="FIELD_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="protected" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="Deprecated API usage" enabled="false" />
+    <inspection_tool class="equals() and hashCode() not paired" enabled="false" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ACTIVE_VCS_NAME" value="" />
+  </component>
+  <component name="DevPartner.ProjectWorkspace">
+    <option name="runtimeAnalysisType" value="-1" />
+  </component>
+  <component name="ideajad">
+    <property name="annotate" value="false" />
+    <property name="annotateFully" value="false" />
+    <property name="braces" value="false" />
+    <property name="clear" value="false" />
+    <property name="confirmNavigationTriggeredDecompile" value="false" />
+    <property name="dead" value="false" />
+    <property name="defaultInitializers" value="false" />
+    <property name="dissassemblerOnly" value="false" />
+    <property name="fieldsFirst" value="false" />
+    <property name="fileExtension" value="jad" />
+    <property name="fullyQualifiedNames" value="false" />
+    <property name="indentation" value="4" />
+    <property name="intRadix" value="10" />
+    <property name="lineNumbersAsComments" value="false" />
+    <property name="longRadix" value="10" />
+    <property name="maxStringLength" value="64" />
+    <property name="nocast" value="false" />
+    <property name="noclass" value="false" />
+    <property name="nocode" value="false" />
+    <property name="noconv" value="false" />
+    <property name="noctor" value="false" />
+    <property name="nodos" value="false" />
+    <property name="nofd" value="false" />
+    <property name="noinner" value="false" />
+    <property name="nolvt" value="false" />
+    <property name="nonlb" value="true" />
+    <property name="outputDirectory" value="E:\home\inger\ant-contrib\src" />
+    <property name="readonly" value="false" />
+    <property name="safe" value="false" />
+    <property name="spaceAfterKeyword" value="false" />
+    <property name="splitStringsAtNewline" value="false" />
+    <property name="useTabs" value="false" />
+  </component>
+  <component name="PsiViewer.ProjectComponent">
+    <option name="HIGHLIGHT" value="false" />
+    <option name="FILTER_WHITESPACE" value="false" />
+    <option name="SHOW_PROPERTIES" value="true" />
+    <option name="SPLIT_DIVIDER_POSITION" value="300" />
+    <option name="AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="AUTOSCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="simpleUML.DiagramSettingsWorkspace" />
+  <component name="StarteamConfiguration">
+    <option name="SERVER" value="GALAX" />
+    <option name="PORT" value="49201" />
+    <option name="USER" value="inger" />
+    <option name="PASSWORD" value="pilam1" />
+    <option name="PROJECT" value="Synygy Compensation" />
+    <option name="VIEW" value="Synygy Compensation" />
+    <option name="ALTERNATIVE_WORKING_PATH" value="" />
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+  </component>
+</project>
+
